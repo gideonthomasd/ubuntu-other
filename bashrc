@@ -142,7 +142,7 @@ mcd () {
 }
 
 # set PATH so it includes user's private bin directories
-PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+PATH="$HOME/bin:$HOME/.local/bin:/usr/bin/vendor_perl:/snap/bin/:$PATH"
 
 export PS1="\[\033[38;5;12m\][\[$(tput sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[\033[38;5;12m\]@\[$(tput sgr0)\]\[\033[38;5;7m\]\h\[$(tput sgr0)\]\[\033[38;5;12m\]]\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]\[\033[38;5;7m\]\w\[$(tput sgr0)\]\[\033[38;5;12m\]>\[$(tput sgr0)\]\[\033[38;5;10m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
@@ -155,16 +155,14 @@ eval "`dircolors -b $DIR_COLORS`"
 alias t='devour thunar'
 alias p='devour pcmanfm'
 alias l='devour lxtask'
-#alias vlc='devour vlc'
+alias vlc='devour vlc'
 alias m='devour mpv'
 
-alias mp3y="youtube-dl -x --audio-format mp3 --prefer-ffmpeg "
-alias y="youtube-dl "
-
-# alias update="sudo timeshift --create && sudo pacman -Syyu"
-alias i="sudo apt install "
-
+alias update="sudo timeshift --check && sudo pacman -Syyu"
+## n nixos.firefox
+alias n="nix-env -iA"
+alias poly="~/.config/polybar/launch.sh"
 #########To make xterm transparent
 #[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
-#NOT NEEDED FOR ARCH alias fixsnap="find -L ~/.local/share/applications -type l -delete && ln -sf /var/lib/snapd/desktop/applications/*.desktop ~/.local/share/applications/"
+
 neofetch
