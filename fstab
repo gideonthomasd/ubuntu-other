@@ -1,0 +1,19 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a device; this may
+# be used with UUID= as a more robust way to name devices that works even if
+# disks are added and removed. See fstab(5).
+#
+# <file system>             <mount point>  <type>  <options>  <dump>  <pass>
+UUID=9974c187-2f2a-43a4-a609-75082bb119b2 /              ext4    defaults,noatime 0 1
+
+
+#INSERTED Partition named 'Games':
+#Use lsblk -f to get partition uuid:
+UUID=6e1eefc5-7698-4f58-8d7b-a11c0967f3bc /run/media/phil/Games ext4 noauto,x-systemd.automount 0 2 
+
+OR
+
+UUID=6e1eefc5-7698-4f58-8d7b-a11c0967f3bc /home/phil/backup  ext4  defaults  0 2
+
+#Then afterwards do: sudo chown phil:phil /run/media/phil/Games to make phil access.
