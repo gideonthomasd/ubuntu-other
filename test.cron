@@ -1,0 +1,7 @@
+*/2 * * * * export DISPLAY=:0 && feh --bg-scale --randomize ~/Pictures/wallpapers/*
+
+
+## crontab -e (editor)
+
+## crontab -l (list)
+## crontab -r (remove)
