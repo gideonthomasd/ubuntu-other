@@ -51,6 +51,16 @@ F12
 ctrl + Right
 	feh --bg-scale --randomize ~/Pictures/wallpapers/*
 
+ctrl + F2
+	lxterminal -e "curl wttr.in/Caerphilly && read"
+	
+ctrl + F1
+	lxterminal -e "htop"
+
+ctrl + F4
+	mocp -G
+	
+
 
 # make sxhkd reload its configuration files:
 super + Escape
