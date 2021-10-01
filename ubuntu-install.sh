@@ -12,4 +12,41 @@ sudo apt install libx11-dev  build-essential libxinerama-dev sharutils suckless-
 
 ################Install dwm################################
 
+mkdir -p ~/.local/share/dwm
+sudo mkdir -p /usr/share/xsessions
 
+mkdir -p ~/dwm-flexipatch
+mkdir -p ~/slstatus
+
+mkdir -p ~/st-transparency-scrollback
+
+cd slstatus
+chmod +x ram
+cd ..
+
+cd dwm-flexipatch
+cp -r * ~/dwm-flexipatch
+cd ..
+
+cd slstatus
+cp -r * ~/slstatus
+cd ..
+
+cd st-transparency-scrollback
+cp -r * ~/st-transparency-scrollback
+cd ..
+
+sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
+sudo cp autostart.sh ~/.local/share/dwm
+
+#######Final############################################
+
+cd ~/dwm-flexipatch
+tar -xzvf patch.tar.gz
+sudo make clean install
+
+cd ~/slstatus
+sudo make clean install
+
+cd ~/st-transparency-scrollback
+sudo make clean install
