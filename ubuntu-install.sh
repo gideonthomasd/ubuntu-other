@@ -22,6 +22,44 @@ mkdir -p $HOME"/.config/openbox"
 mkdir -p $HOME"/.config/tint2"
 mkdir -p $HOME"/.config/i3"
 mkdir -p $HOME"/.config/i3blocks"
+mkdir -p $HOME"/.config/plank"
+mkdir -p $HOME"/.config/sakura"
+
+############### Put in directories #################################
+
+cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
+
+cd rofi
+cp -r * ~/.config/rofi
+cd ..
+
+cd jgmenu
+cp -r * ~/.config/jgmenu
+cd ..
+
+cd openbox
+cp -r * ~/.config/openbox
+cd ..
+
+cd plank
+cp -r * ~/.config/plank
+cd ..
+
+cd sakura
+cp -r * ~/.config/sakura
+cd ..
+
+cd i3
+cp -r * ~/.config/i3
+cd ..
+
+cd i3blocks
+cp -r * ~/.config/i3blocks
+cd ..
+
+cd tint2
+cp -r * ~/.config/tint2
+cd ..
 
 
 ################ Install Dwm #######################################
