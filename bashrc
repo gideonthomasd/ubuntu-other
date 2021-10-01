@@ -155,13 +155,16 @@ eval "`dircolors -b $DIR_COLORS`"
 alias t='devour thunar'
 alias p='devour pcmanfm'
 alias l='devour lxtask'
-alias vlc='devour vlc'
+#alias vlc='devour vlc'
 alias m='devour mpv'
 
-alias update="sudo timeshift --check && sudo pacman -Syyu"
+#alias update="sudo timeshift --check && sudo pacman -Syyu"
 ## n nixos.firefox
-alias n="nix-env -iA"
-alias poly="~/.config/polybar/launch.sh"
+#alias n="nix-env -iA"
+#alias poly="~/.config/polybar/launch.sh"
+
+alias i="sudo apt install"
+
 #########To make xterm transparent
 #[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 
