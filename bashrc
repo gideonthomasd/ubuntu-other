@@ -161,7 +161,8 @@ alias m='devour mpv'
 alias mp3y="youtube-dl -x --audio-format mp3 --prefer-ffmpeg "
 alias y="youtube-dl "
 
-alias update="sudo timeshift --create && sudo pacman -Syyu"
+# alias update="sudo timeshift --create && sudo pacman -Syyu"
+alias i="sudo apt install "
 
 #########To make xterm transparent
 #[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
