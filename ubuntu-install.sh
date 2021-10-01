@@ -8,7 +8,7 @@ sudo apt install tint2 xcompmgr geany unzip pulseaudio pavucontrol fonts-font-aw
 
 sudo apt install parcellite lxterminal vim i3blocks breeze-cursor-theme breeze-gtk-theme breeze-icon-theme gparted ark neofetch flatpak i3lock-fancy -yy
 
-sudo apt install libx11-dev  build-essential libxinerama-dev sharutils suckless-tools libxft-dev moc python3-pip fonts-powerline -yy
+sudo apt install libx11-dev  build-essential libxinerama-dev sharutils suckless-tools libxft-dev moc python3-pip fonts-powerline fonts-noto -yy
 
 ################ Prepare config directories ########################
 
