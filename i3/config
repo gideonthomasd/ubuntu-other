@@ -51,7 +51,7 @@ bindsym $mod+Return exec lxterminal
 bindsym $mod+w kill
 
 # start dmenu (a program launcher) #altered
-bindsym $mod+p exec dmenu_run
+bindsym $mod+p exec dmenu_run -fn 'Monospace-15' -p "Run"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
