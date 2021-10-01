@@ -4,5 +4,5 @@ nm-applet &
 lxpolkit &
 slstatus &
 xcompmgr &
-sxhkd -c ~/.config/bspwm/sxhkdrc &
-~/.config/bspwm/testwallpaper &
+sxhkd -c ~/.config/i3/sxhkdrc &
+# ~/.config/bspwm/testwallpaper &
