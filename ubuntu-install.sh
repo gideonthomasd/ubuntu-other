@@ -37,6 +37,7 @@ chmod +x *.sh
 cd ..
 
 cp powermenu.sh ~/powermenu.sh
+cp bashrc ~/.bashrc
 
 ############### Put in directories #################################
 
