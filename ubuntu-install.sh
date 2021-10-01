@@ -93,6 +93,11 @@ sudo cp autostart.sh ~/.local/share/dwm
 
 #######Final############################################
 
+pip install --user bumblebee-status
+cd ~/.config/i3/myfiles
+cp -r * ~/.local/lib/python3.8/bumblebee_status/modules/contrib
+
+
 cd ~/dwm-flexipatch
 tar -xzvf patch.tar.gz
 sudo make clean install
