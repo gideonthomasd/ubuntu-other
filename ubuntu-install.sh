@@ -25,6 +25,19 @@ mkdir -p $HOME"/.config/i3blocks"
 mkdir -p $HOME"/.config/plank"
 mkdir -p $HOME"/.config/sakura"
 
+############### Prepare directories ################################
+
+cd i3
+chmod +x *.sh
+chmod +x testwallpaper
+cd ..
+
+cd i3blocks
+chmod +x *.sh
+cd ..
+
+
+
 ############### Put in directories #################################
 
 cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
@@ -94,7 +107,7 @@ sudo cp autostart.sh ~/.local/share/dwm
 #######Final############################################
 
 pip install --user bumblebee-status
-cd ~/.config/i3/myfiles
+cd ~/.config/i3/bumblebee-status/myfiles
 cp -r * ~/.local/lib/python3.8/bumblebee_status/modules/contrib
 
 
