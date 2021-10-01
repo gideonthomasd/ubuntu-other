@@ -36,7 +36,7 @@ cd i3blocks
 chmod +x *.sh
 cd ..
 
-
+cp powermenu.sh ~/powermenu.sh
 
 ############### Put in directories #################################
 
