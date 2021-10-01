@@ -10,7 +10,21 @@ sudo apt install parcellite lxterminal vim i3blocks breeze-cursor-theme breeze-g
 
 sudo apt install libx11-dev  build-essential libxinerama-dev sharutils suckless-tools libxft-dev moc python3-pip fonts-powerline -yy
 
-################Install dwm################################
+################ Prepare config directories ########################
+
+mkdir -p $HOME"/.config"
+mkdir -p $HOME"/.config/lxterminal"
+mkdir -p $HOME"/.config/termite"
+mkdir -p $HOME"/.config/rofi"
+mkdir -p $HOME"/.config/jgmenu"
+mkdir -p $HOME"/.config/openbox"
+#mkdir -p $HOME"/.config/obmenu-generator"
+mkdir -p $HOME"/.config/tint2"
+mkdir -p $HOME"/.config/i3"
+mkdir -p $HOME"/.config/i3blocks"
+
+
+################ Install Dwm #######################################
 
 mkdir -p ~/.local/share/dwm
 sudo mkdir -p /usr/share/xsessions
