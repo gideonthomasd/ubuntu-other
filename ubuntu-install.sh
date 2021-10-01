@@ -107,6 +107,8 @@ sudo cp autostart.sh ~/.local/share/dwm
 
 #######Final############################################
 
+sudo dpkg -i jgmenu_4.3.0-1+b1_amd64.deb
+
 pip install --user bumblebee-status
 cd ~/.config/i3/bumblebee-status/myfiles
 cp -r * ~/.local/lib/python3.8/site-packages/bumblebee_status/modules/contrib
@@ -121,3 +123,6 @@ sudo make clean install
 
 cd ~/st-transparency-scrollback
 sudo make clean install
+
+sudo snap install snap-store
+sudo snap install firefox
