@@ -193,8 +193,8 @@ bar {
 		font pango: Mononoki Nerd Font 15
 #        #status_command i3status -c /home/phil/.config/i3/i3status.conf
 #        status_command i3blocks -c /home/phil/.config/i3blocks/i3blocks.conf
-        status_command /home/phil/.local/bin/bumblebee-status -m mymocp mymemory battery pasink time \
-		 -p time.format="%H:%M" -p mymemory.left-click="lxterminal -e 'curl wttr.in/Caerphilly && read' " -t iceberg-rainbow
+        status_command /home/phil/.local/bin/bumblebee-status -m mymocp weather2 mymemory battery pasink time \
+		 -p time.format="%H:%M" -p weather2.left-click="lxterminal -e 'curl wttr.in/Caerphilly && read' " -p mymemory.left-click="lxterminal -e htop" -t iceberg-rainbow
 }
 
 # My positions
