@@ -164,6 +164,8 @@ alias m='devour mpv'
 #alias poly="~/.config/polybar/launch.sh"
 
 alias i="sudo apt install"
+alias y="youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]'"
+alias mp3y="youtube-dl -x --audio-format mp3 --prefer-ffmpeg"
 
 #########To make xterm transparent
 #[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
