@@ -39,8 +39,13 @@ mkdir -p $HOME"/.config/i3blocks"
 mkdir -p $HOME"/.config/plank"
 mkdir -p $HOME"/.config/sakura"
 mkdir -p $HOME"/.config/succade"
+mkdir -p $HOME"/.config/bspwm"
 
 ############### Prepare directories ################################
+
+cd bspwm
+chmod +x *.sh
+cd ..
 
 cd succade
 chmod +x *.sh
@@ -62,6 +67,10 @@ cp stalonetrayrc ~/.stalonetrayrc
 ############### Put in directories #################################
 
 cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
+
+cd bspwm
+cp -r * ~/.config/bspwm
+cd ..
 
 cd succade
 cp -r * ~/.config/succade
