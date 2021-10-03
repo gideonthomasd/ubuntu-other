@@ -42,11 +42,13 @@ mkdir -p $HOME"/.config/plank"
 mkdir -p $HOME"/.config/sakura"
 mkdir -p $HOME"/.config/succade"
 mkdir -p $HOME"/.config/bspwm"
+mkdir -p $HOME"/.local/bin"
 
 ############### Prepare directories ################################
 
 cd bspwm
 chmod +x *.sh
+chmod +x bspwmrc
 cd ..
 
 cd succade
@@ -170,7 +172,9 @@ sudo make install
 
 cd ~/trysuccade
 chmod +x build-inih
+chmod +x build
 ./build-inih
+cp bin/succade ~/.local/bin/succade
 
 
 sudo snap install snap-store
