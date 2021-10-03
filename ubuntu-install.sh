@@ -38,8 +38,13 @@ mkdir -p $HOME"/.config/i3"
 mkdir -p $HOME"/.config/i3blocks"
 mkdir -p $HOME"/.config/plank"
 mkdir -p $HOME"/.config/sakura"
+mkdir -p $HOME"/.config/succade"
 
 ############### Prepare directories ################################
+
+cd succade
+chmod +x *.sh
+cd ..
 
 cd i3
 chmod +x *.sh
@@ -52,10 +57,15 @@ cd ..
 
 cp powermenu.sh ~/powermenu.sh
 cp bashrc ~/.bashrc
+cp stalonetrayrc ~/.stalonetrayrc
 
 ############### Put in directories #################################
 
 cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
+
+cd succade
+cp -r * ~/.config/succade
+cd ..
 
 cd rofi
 cp -r * ~/.config/rofi
@@ -123,6 +133,7 @@ sudo cp autostart.sh ~/.local/share/dwm
 
 sudo dpkg -i jgmenu_4.3.0-1+b1_amd64.deb
 
+
 pip install --user bumblebee-status
 cd ~/.config/i3/bumblebee-status/myfiles
 cp -r * ~/.local/lib/python3.8/site-packages/bumblebee_status/modules/contrib
@@ -137,6 +148,15 @@ sudo make clean install
 
 cd ~/st-transparency-scrollback
 sudo make clean install
+
+cd ~/lemonbar-xft
+make
+sudo make install
+
+cd ~/trysuccade
+chmod +x build-inih
+./build-inih
+
 
 sudo snap install snap-store
 sudo snap install firefox
