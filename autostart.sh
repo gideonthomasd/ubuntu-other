@@ -1,6 +1,7 @@
 #!/bin/bash
 
 nm-applet &
+volumeicon &
 lxpolkit &
 slstatus &
 xcompmgr &
