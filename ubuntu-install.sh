@@ -26,6 +26,8 @@ cd ..
 
 ################ Prepare config directories ########################
 
+mkdir -p $HOME"/.fonts"
+
 mkdir -p $HOME"/.config"
 mkdir -p $HOME"/.config/lxterminal"
 mkdir -p $HOME"/.config/termite"
@@ -67,6 +69,10 @@ cp stalonetrayrc ~/.stalonetrayrc
 ############### Put in directories #################################
 
 cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
+
+cd fonts
+cp -r * ~/.fonts
+cd ..
 
 cd bspwm
 cp -r * ~/.config/bspwm
