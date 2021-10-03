@@ -1,0 +1,111 @@
+[bar]
+name = "testbar"
+blocks = "desktop  | mocp ram weather | switch date time"
+height = 32
+areas = 16
+foreground = "#FFFF99"
+background = "#000000"
+line-color = "#555555"
+# "#555555"
+line-width = 2
+#font = "-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+font = "Ubuntu Monospace:size=13"
+affix-font = "mononoki Nerd Font:size=15"
+#affix-font = "Font Awesome 5 Brands:size=16"
+#"Font Awesome 5 Free-Solid:size=16"
+#affix-font = "Font Awesome 5 Brands-Regular:size=16"
+#affix-font = "FontAwesome:size=16"
+#"Font Awesome 5 Free-Regular:size=16"
+
+[default]
+label-foreground = "#dddddd"
+affix-foreground = "#777777"
+#"#555555"
+margin = 8
+padding-left = 1
+prefix = "[ " 
+suffix = " ]"
+underline = true
+
+[desktop]
+label-foreground = "#ff99CC"
+font = "Cantarell:size=16"
+command = "bspc query -D -d focused --names"
+trigger = "bspc subscribe"
+label = "WORKSPACE "
+margin-left = 8
+mouse-left  = bspc desktop -f next.local
+mouse-right = bspc desktop -f prev.local
+
+[user]
+command = "whoami"
+label = "USER"
+
+[date]
+command = "date +'%d-%m'"
+interval = 100
+label = " "
+label-foreground = "#3399ff"
+#" "
+
+[time]
+label-foreground = "#ff99CC"
+foreground = "#99FF99"
+command = "date +'%H:%M:%S'"
+interval = 1
+label = " "
+#" "
+#mouse-left = "xclock"
+#margin-right = 8
+
+[ram]
+command = ~/.config/succade/mem.sh
+interval = 2
+label = " "
+label-foreground = "#cc99ff"
+mouse-left = lxterminal -e htop
+
+[cpu]
+label-foreground = "#CC99FF"
+foreground = "#FF9999"
+command = ~/.config/succade/dwmcpu.sh
+interval = 2
+label = " "
+
+
+[update]
+label = " "
+foreground = "#CC99FF"
+command = ~/.config/succade/updates.sh
+interval = 300
+
+[weather]
+label-foreground = "#ff99CC"
+foreground = "#99CCFF"
+command = ~/.config/succade/weather.sh
+mouse-left = lxterminal -e 'curl wttr.in/Caerphilly && read'
+interval = 900
+label = " "
+
+[switch]
+command = echo ""
+#echo ""
+foreground = "#99FF99"
+mouse-left = ~/.config/succade/windows.sh
+
+[offswitch]
+command = echo ""
+foreground = "#99CCFF"
+mouse-left = ~/powermenu.sh
+
+[mail]
+label-foreground = "#99FF99"
+command = ~/.config/succade/dwmmail.sh
+interval = 300
+label = " "
+
+[mocp]
+foreground = "#99CCFF"
+command = ~/.config/succade/mocp.sh
+interval = 1
+mouse-left = mocp -G
