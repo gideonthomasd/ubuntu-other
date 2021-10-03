@@ -60,6 +60,12 @@ ctrl + F1
 ctrl + F4
 	mocp -G
 	
+ctrl + n
+	mocp --next
+
+ctrl + p
+	mocp --previous
+	
 
 
 # make sxhkd reload its configuration files:
