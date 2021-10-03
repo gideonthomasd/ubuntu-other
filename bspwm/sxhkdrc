@@ -50,6 +50,12 @@ F12
 	
 ctrl + Right
 	feh --bg-scale --randomize ~/Pictures/wallpapers/*
+	
+ctrl + n
+	mocp --next
+
+ctrl + p
+	mocp --previous
 
 # make sxhkd reload its configuration files:
 super + Escape
