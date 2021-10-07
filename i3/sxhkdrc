@@ -43,7 +43,7 @@ F9
 F10
 	jgmenu_run
 F11
-        xfce4-terminal --drop-down
+    lxterminal
 	
 F12
 	thunar
@@ -56,6 +56,9 @@ ctrl + F2
 	
 ctrl + F1
 	lxterminal -e "htop"
+	
+ctrl + F3
+	gsimplecal
 
 ctrl + F4
 	mocp -G
@@ -65,6 +68,12 @@ ctrl + n
 
 ctrl + p
 	mocp --previous
+
+ctrl + shift + m
+	lxterminal -e mocp
+	
+ctrl + x 
+	mocp -x
 	
 
 
