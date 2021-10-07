@@ -14,6 +14,9 @@ sudo apt install libx11-dev  build-essential libxinerama-dev sharutils suckless-
 sudo apt install build-essential libx11-dev libxft-dev libx11-xcb-dev libxcb-randr0-dev libxcb-xinerama0-dev bspwm -yy
 sudo apt install stalonetray volumeicon-alsa -yy
 
+############### Prepare xmonad #####################
+sudo apt install libxrandr-dev libxss-dev trayer xmonad xmonad-contrib xdotool xmobar
+
 mkdir -p $HOME"/lemonbar-xft"
 cd lemonbar-xft
 cp -r * ~/lemonbar-xft
