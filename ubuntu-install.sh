@@ -15,7 +15,10 @@ sudo apt install build-essential libx11-dev libxft-dev libx11-xcb-dev libxcb-ran
 sudo apt install stalonetray volumeicon-alsa -yy
 
 ############### Prepare xmonad #####################
-sudo apt install libxrandr-dev libxss-dev trayer xmonad xmonad-contrib xdotool xmobar -yy
+sudo apt install libxrandr-dev -yy
+sudo apt install libxss-dev -yy
+sudo apt install trayer -yy
+sudo apt install xmonad xdotool xmobar -yy
 
 mkdir -p $HOME"/lemonbar-xft"
 cd lemonbar-xft
