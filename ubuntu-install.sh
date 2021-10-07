@@ -46,8 +46,15 @@ mkdir -p $HOME"/.config/sakura"
 mkdir -p $HOME"/.config/succade"
 mkdir -p $HOME"/.config/bspwm"
 mkdir -p $HOME"/.local/bin"
+mkdir -p $HOME"/.config/xmobar"
+mkdir -p $HOME"/.xmonad"
+
 
 ############### Prepare directories ################################
+
+cd xmobar
+chmod +x *.sh
+cd ..
 
 cd bspwm
 chmod +x *.sh
@@ -74,6 +81,14 @@ cp stalonetrayrc ~/.stalonetrayrc
 ############### Put in directories #################################
 
 cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
+
+cd xmonad
+cp -r * ~/.xmonad
+cd ..
+
+cd xmobar
+cp -r * ~/.config/xmobar
+cd ..
 
 cd fonts
 cp -r * ~/.fonts
@@ -190,6 +205,8 @@ sudo apt-get update
 sudo apt install appimagelauncher
 
 sudo usermod -aG lpadmin phil
+
+xmonad --recompile
 
 
 
