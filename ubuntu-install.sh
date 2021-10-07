@@ -191,7 +191,7 @@ sudo make install
 cd ~/trysuccade
 chmod +x build-inih
 chmod +x build
-./build-inih
+sudo ./build-inih
 cp bin/succade ~/.local/bin/succade
 
 
