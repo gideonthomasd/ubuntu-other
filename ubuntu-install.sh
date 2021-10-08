@@ -175,7 +175,7 @@ sudo dpkg -i jgmenu_4.3.0-1+b1_amd64.deb
 pip install --user bumblebee-status
 cd ~/.config/i3/bumblebee-status/myfiles
 cp -r * ~/.local/lib/python3.8/site-packages/bumblebee_status/modules/contrib
-
+cp -r * ~/.local/lib/python3.9/site-packages/bumblebee_status/modules/contrib
 
 cd ~/dwm-flexipatch
 tar -xzvf patch.tar.gz
