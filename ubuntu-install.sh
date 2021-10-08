@@ -26,9 +26,9 @@ cp -r * ~/lemonbar-xft
 cd ..
 
 mkdir -p $HOME"/trysuccade"
-cd trysuccade
-cp -r * ~/trysuccade
-cd ..
+#cd trysuccade
+#cp -r * ~/trysuccade
+#cd ..
 
 ################ Prepare config directories ########################
 
@@ -192,9 +192,11 @@ make
 sudo make install
 
 cd ~/trysuccade
+git clone https://github.com/domsson/succade
+cd succade
 chmod +x build-inih
 chmod +x build
-sudo ./build-inih
+./build-inih
 cp bin/succade ~/.local/bin/succade
 
 
