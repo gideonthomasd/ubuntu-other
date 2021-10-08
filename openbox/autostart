@@ -5,6 +5,7 @@ xcompmgr &
 tint2 &
 plank &
 lxpolkit &
-~/.config/i3/testwallpaper &
+volumeicon &
+#~/.config/i3/testwallpaper &
 #~/.config/openbox/mem.sh | lemonbar -f '-Adobe-Courier-Medium-R-Normal--24-240-75-75-M-150-ISO8859-1' &
 
