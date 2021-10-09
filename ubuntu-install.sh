@@ -17,7 +17,7 @@ sudo apt install stalonetray volumeicon-alsa -yy
 ############### Prepare xmonad #####################
 sudo apt install libxrandr-dev -yy
 sudo apt install libxss-dev -yy
-sudo apt install trayer -yy
+sudo apt install trayer htop -yy
 sudo apt install xmonad xdotool xmobar libghc-xmonad-contrib-prof -yy
 
 mkdir -p $HOME"/lemonbar-xft"
