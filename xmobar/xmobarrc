@@ -15,7 +15,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%UnsafeStdinReader% } { <fc=#80ff84><action=`rofi -mode window -show window -hide-scrollbar -pading 20 -live-padding 4 -width 40 -lines 6`>%rofi%</action>  </fc> <fc=#ff007f><action=mocp -G>%moc%</action> </fc> <fc=#9999FF>  </fc><fc=#FFFF99><action=`lxterminal -e htop`>%memory%</action></fc> <fc=#CC99FF>  </fc><fc=#66FFFF><action=`lxterminal -e 'curl wttr.in/Caerphilly && read'`>%myweather%</action></fc>  <fc=#FF9999> </fc> <fc=#FFFFFF><action=`gsimplecal`>%time%</action></fc><fc=#ffff99> %mytime%</fc>     	  "
+   , template = "%UnsafeStdinReader% } { <fc=#80ff84><action=`rofi -mode window -show window -hide-scrollbar -pading 20 -live-padding 4 -width 40 -lines 6`>%rofi%</action>  </fc> <fc=#ff007f><action=mocp -G>%moc%</action> </fc> <fc=#9999FF>  </fc><fc=#FFFF99><action=`lxterminal -e htop`>%memory%</action></fc> <fc=#CC99FF>  </fc><fc=#66FFFF><action=`lxterminal -e 'curl wttr.in/Caerphilly && read'`>%myweather%</action></fc>  <fc=#FF9999> </fc> <fc=#FFFFFF><action=`gsimplecal`>%time%</action></fc><fc=#ffff99> %mytime%</fc>         	  "
 
    -- general behavior Unsafe
    , lowerOnStart =     True    -- send to bottom of window stack on start
