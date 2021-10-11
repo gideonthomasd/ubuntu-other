@@ -5,7 +5,7 @@ fuzzy_edges 0
 geometry 1x1+330+0 # position x:330 y:0
 grow_gravity NW
 icon_gravity NW
-icon_size 25
+icon_size 28
 log_level err
 kludges force_icons_size
 max_geometry 0x0
