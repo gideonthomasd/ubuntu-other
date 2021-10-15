@@ -2,7 +2,7 @@
 
 # Options for powermenu
 lock="    Lock"
-logout="    Logout"
+logout="  Logout"
 shutdown="    Shutdown"
 reboot="    Reboot"
 sleep="   Sleep"
