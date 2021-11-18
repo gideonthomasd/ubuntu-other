@@ -2,7 +2,8 @@
 
 sudo apt update && sudo apt upgrade
 
-sudo apt install xorg xserver-xorg xutils mesa-utils xinit openbox obconf i3 dmenu lxappearance git sakura xterm feh nitrogen thunar materia-gtk-theme deepin-icon-theme network-manager -yy
+sudo apt install xorg xserver-xorg xutils mesa-utils xinit openbox obconf i3 dmenu lxappearance git sakura xterm feh nitrogen thunar materia-gtk-theme network-manager -yy
+#deepin-icon-theme 
 
 sudo apt install tint2 xcompmgr geany unzip pulseaudio pavucontrol fonts-font-awesome rofi gsimplecal curl sxhkd wget plank lxtask lxpolkit vlc -yy
 
